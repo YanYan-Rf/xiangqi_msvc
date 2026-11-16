@@ -1,0 +1,10 @@
+^F:\PROJ-2025\CPP\XIANGQI_MSVC\CMAKELISTS.TXT
+setlocal
+D:\CMake\bin\cmake.exe -SF:/proj-2025/cpp/xiangqi_msvc -BF:/proj-2025/cpp/xiangqi_msvc/build --check-stamp-file F:/proj-2025/cpp/xiangqi_msvc/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

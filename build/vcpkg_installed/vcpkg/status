@@ -1,0 +1,123 @@
+Package: vcpkg-cmake-config
+Version: 2026-07-21
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 58eacc3cc2c117dedc80259f48f1656424201450139ea7b405b0ae02f787bb41
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2025-08-07
+Architecture: x64-windows
+Multi-Arch: same
+Abi: ff93d9becb79ca1632ed842292d8c08d574a46e1405f06458b1c38bfa1a64797
+Status: install ok installed
+
+Package: stb
+Version: 2026-08-02
+Architecture: x64-windows
+Multi-Arch: same
+Abi: a151d7b53f9d532537f4500f2d9d9c622c8b5288c4c3dd29dd4c6863d7ab0913
+Description: public domain header-only libraries
+Status: install ok installed
+
+Package: qoi
+Version: 2026-09-27
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 7ff483a53de656128f149e706c0498b973470c9460e44da00e956a1f0731b767
+Description: The Quite OK Image Format for fast, lossless image compression
+Status: install ok installed
+
+Package: nanosvg
+Version: 2023-12-29
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 4694e37db417b4e9254c8741ad5a93acbd08746a54bdf6864089b7980e3dd757
+Description: NanoSVG is a simple stupid single-header-file SVG parser. It is accompanied by a simple SVG rasterizer.
+Status: install ok installed
+
+Package: mmx
+Version: 2025-03-19
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 3dac7401bd8134b2cb152e9d1c29202cf2bb1efa3d6fb0b1034942136ca5fae0
+Description: Single header libraries for C/C++
+Status: install ok installed
+
+Package: glfw3
+Version: 3.5.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: bd1a6fab5c9db7e709e374c2762965d59132cc16a5c4a49eaf7f79f8ce5d7f03
+Description: GLFW is a free, Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan application development. It provides a simple, platform-independent API for creating windows, contexts and surfaces, reading input, handling events, etc.
+Status: install ok installed
+
+Package: dirent
+Version: 1.26
+Architecture: x64-windows
+Multi-Arch: same
+Abi: df710665830aff45345d93decfb19e0275fe886ae8b8591707f90bed6e93384a
+Description: Dirent is a C/C++ programming interface that allows programmers to retrieve information about files and directories under Linux/UNIX. This project provides Linux compatible Dirent interface for Microsoft Windows.
+Status: install ok installed
+
+Package: cgltf
+Version: 1.15
+Architecture: x64-windows
+Multi-Arch: same
+Abi: e55838f0558109cbea280b0acfd27360a80f786c8fc4630f132c3ec6a44c469b
+Description: Single-file glTF 2.0 loader and writer written in C99
+Status: install ok installed
+
+Package: miniaudio
+Version: 0.11.26
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 831025982e87f0a9215c7657cccecaf6721b74d56ab45587517276335fa4ba72
+Description: Audio playback and capture library written in C, in a single source file
+Status: install ok installed
+
+Package: drlibs
+Version: 2026-03-03
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 656f11f04b97ca3a3cd93ee70ae169627be70ea10bba68f30521295059bb177a
+Description: Single-file audio decoding libraries for C/C++
+Status: install ok installed
+
+Package: raylib
+Version: 6.2
+Depends: cgltf, dirent, glfw3, mmx, nanosvg, qoi, stb, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 29a4573af73640d9f9dc28b2cf79207a17bfde93416b9cf6bd53be28f7673de7
+Description: A simple and easy-to-use library to enjoy videogames programming
+Default-Features: audio
+Status: install ok installed
+
+Package: raylib
+Feature: audio
+Depends: drlibs, miniaudio
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build audio module
+Status: install ok installed
+
+Package: sqlite3
+Version: 3.54.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 16a18a8bd088f057bcef0b3ee2914063750d5ba28001a7690de6af00bf1711f9
+Description: SQLite is a software library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine.
+Default-Features: json1
+Status: install ok installed
+
+Package: sqlite3
+Feature: json1
+Architecture: x64-windows
+Multi-Arch: same
+Description: Enable JSON functionality for sqlite3
+Status: install ok installed
+
